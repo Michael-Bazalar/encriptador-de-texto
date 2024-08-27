@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+        <title>Encriptador de Texto</title>
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="Imagenes/pngwing.com.png" alt="logo Alura">
+        </header>
+        <main>
+            <section class="input-section">
+                <label for="input-text" class="sr-only">Ingrese el texto aquí</label>
+                <textarea id="input-text" class="text-area" placeholder="Ingrese el texto aqui" aria-label="Área de texto para encriptar"></textarea>
+                <p class="informacion">Solo letras minúsculas y sin acentos</p>
+                <div class="botones">
+                    <button class="btn btn-encriptar" aria-label="Encriptar texto">Encriptar</button>
+                    <button class="btn btn-desencriptar" aria-label="Desencriptar texto">Desencriptar</button>
+                </div>
+            </section>
+            <section class="output-section">
+                <label for="output-text" class="sr-only">Texto encriptado/desencriptado</label>
+                <textarea id="output-text" class="mensaje" readonly aria-label="Resultado de encriptación/desencriptación"></textarea>
+                <button class="btn btn-copiar" aria-label="Copiar texto">Copiar</button>
+            </section>
+        </main>
+        <footer>
+            <p>Desarrollado por Michael Bazalar Rivas</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+    </html>
+    
